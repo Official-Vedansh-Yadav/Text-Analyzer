@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Analyzer - Javascript Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Modal Trigger button -->
+  <button id="access-tools">
+    Access More Tools
+  </button>
+  <!-- Modal Trigger button ends here -->
+  <!-- Extra Tools Modal starts here -->
+  <div id="modal">
+    <!-- <div class="close-modal-symbol">X</div> -->
+    <div class="flex">
+      <div class="tool-name">
+        <h3>Find</h3>
+        <h3>Replace</h3>
+        <h3>Delete</h3>
+      </div>
+      <div class="inputs">
+        <input type="text" id="find" /> <br />
+        <input type="text" id="replace" /> <br />
+        <input type="text" id="delete" />
+      </div>
+    </div>
+    <hr style="width: 100%; margin: 2rem 0;" />
+    <div class="buttons">
+      <button id="replace-btn">Replace</button>
+      <button id="delete-btn">Delete</button>
+      <button class="close-modal-btn" id="close-btn">Close</button>
+    </div>
+  </div>
+  <!-- Extra Tools modal ends here -->
+  <div class="dark-tansparency"></div>
+  <!-- This div will be shown when the modal is trigered as the dark transparent background -->
+  <div class="container">
+    <textarea name="input" spellcheck="false" id="input" cols="30" rows="10" placeholder="Write Your Text here?"></textarea>
+    <button class="submit" id="submitBtn">Submit</button>
+    <div class="output">
+      <div id="words">
+        <span>0</span>
+        <span>words</span>
+      </div>
+      <div id="characters">
+        <span>0</span>
+        <span>Characters</span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="code.js"></script>
+
+</html>
